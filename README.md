@@ -76,3 +76,7 @@ H / F1 shows them all).
   mirrors the host's clock for co-op, the player controller, the HUD that runs OnGUI).
 - The game needs no level: it plays on the engine's empty `/Engine/Maps/Entry` and builds everything
   at runtime (`?Scene=MainMenu` or `?Scene=UnitySpace` picks Unity's scene).
+
+## Headless
+
+The shared, off-by-default `--headless` mode (no window, no sound, one `MINDATTIC_HEADLESS_READY` log line) comes from the `MindAtticShared` plugin in `../Unreal.Shared`, enabled in the .uproject (`-Track CSharp` for the C# project). Run `./tools/play-headless.ps1 -Wait` to start the game that way from the editor binaries. The game itself has no headless opt-in beyond the plugin (archived).
