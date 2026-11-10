@@ -12,3 +12,6 @@ obj/
 Script/global.json
 Script/*.sln.projects.json
 Script/**/Properties/launchSettings.json
+# UnrealSharp generates this whole project on each build (as Unreal.Playground's
+# Script/UnrealSoulslikeCSharp.Glue/ does for its own RuntimeGlue-style project).
+Script/UnrealSpaceGodCSharp.RuntimeGlue/
