@@ -1,10 +1,10 @@
 ---
 codex: 1
 project: Unreal.SpaceGod
-code: US
+code: USG
 layer: stories
 status: living
-updated: 2026-11-03
+updated: 2026-11-05
 ---
 <!-- GENERATED from MindAttic.Tickets/data/Tickets.db by `tickets db render`. Do not edit: this file is rewritten from the database; change stories and tickets with the tickets CLI. -->
 
@@ -21,5 +21,8 @@ _Nothing recorded yet._
 
 | ID | Date | Type | Status | Summary | Ref |
 |---|---|---|---|---|---|
-| US-T1 | 2026-11-03 | docs | closed | Start the permanent ticket log in the ticket database | — |
-| US-T2 | 2026-11-03 | feature | closed | Recreate Unity.Space's Sol system in Unreal Engine 5 (C++) as a co-op game: JPL ephemeris, ELP-2000 Moon, IAU orientation, textured bodies, gameplay/realistic scale, focus camera, shared time warp over listen-server multiplayer | e1b6839 |
+| USG-T1 | 2026-11-05 | docs | closed | Start the permanent ticket log in the ticket database | — |
+| USG-T2 | 2026-11-06 | feature | closed | Adopt the shared off-by-default --headless launch mode (Unreal.Shared) | — |
+| USG-T3 | 2026-11-10 | chore | open | Mirror the fleet-wide .agent/ portable command catalog into this repo and regenerate docs/USER_STORIES.md (catches it up to the US -> USG ticket-code rename already in the ticket database) | — |
+| USG-T4 | 2026-11-10 | chore | open | CSharp/.gitignore did not exclude the whole UnrealSharp-generated Script/UnrealSpaceGodCSharp.RuntimeGlue/ project (only its bin/obj/launchSettings.json); a build left the generated AssetIds.cs/AssetTypes.cs/GameplayTags.cs/TraceChannel.cs/.csproj as untracked source. Ignore the whole directory, matching Unreal.Playground's CSharp/.gitignore precedent (Script/UnrealSoulslikeCSharp.Glue/) | — |
+| USG-T5 | 2026-11-10 | chore | open | Commit Cpp/Config/DefaultInput.ini found uncommitted after a crashed session: stock UE5 InputSettings defaults (EnhancedInput/VR/gamepad axis config written by the editor), no custom bindings, well-formed and complete; verified against the tracked DefaultEngine.ini/DefaultGame.ini convention | — |
